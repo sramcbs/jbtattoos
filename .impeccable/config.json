@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "/Users/user/Desktop/CLAUDE/jbtattoos/index.html"
+        ],
+        "createdAt": "2026-08-25T02:01:41.700Z",
+        "reason": "Lightbox img element populated dynamically via JS on gallery click"
+      }
+    ]
+  }
+}

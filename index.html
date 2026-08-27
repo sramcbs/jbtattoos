@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jay B Tattoos — Custom Tattoo Artist, San Fernando Valley</title>
+<meta name="description" content="Custom tattoo artistry by Jay B in the San Fernando Valley. Black & grey realism, religious iconography, Chicano, and Aztec-inspired work. View portfolio and book online.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Jay B Tattoos — Custom Tattoo Artist">
+<meta property="og:description" content="Custom tattoo artistry rooted in precision. Book your appointment online.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://jbtattoos.com/assets/gallery-1.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jay B Tattoos — Custom Tattoo Artist">
+<meta name="twitter:description" content="Custom tattoo artistry rooted in precision. Book your appointment online.">
+<meta name="twitter:image" content="https://jbtattoos.com/assets/gallery-1.jpeg">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='27 20 325 490'%3E%3Cpath fill='%23c9a84c' d='M230.8,429.62c-5.29-.71-9.79-6.41-10.21-11.58-1.42-17.81,15.67-28.23,26.79-39.15,7.87-24.8.88-51.09-24.35-61.6-2.27-.94-7.04-2.76-9.34-2.97-.42-.04-.7-.08-.86.41l.52,39.9c.56,4.44,1.06,9.22,3.91,12.85,10.48,13.3,23.29-9.3,13.96-18.99-.61-.63-1.7-1.11-2.23-1.81,5.9.87,7.32,7.66,7.55,12.69.58,12.33-9.54,21.9-17.74,29.77-4.92,4.72-11.09,8.84-14.26,15.06-.62,1.21-1.23,3.7-1.84,4.58-.23.33-.32.55-.8.46Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+/* ── Reset ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img,svg{display:block;max-width:100%}
+button,input,select,textarea{font:inherit;color:inherit;background:none;border:none}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+::selection{background:#c9a84c;color:#000}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#000}
+::-webkit-scrollbar-thumb{background:#c9a84c40;border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:#c9a84c80}
+input::placeholder,textarea::placeholder{color:#666}
+:focus-visible{outline:1px solid #c9a84c;outline-offset:2px}
+
+/* ── Tokens ── */
+:root{
+  --black:#000000;
+  --gold:#c9a84c;
+  --gold-light:#d4b85c;
+  --gold-dark:#a8893a;
+  --gold-muted:#c9a84c30;
+  --white:#ffffff;
+  --white-dim:#b0b0b0;
+  --surface-dark:#0a0a0a;
+  --surface-card:#111111;
+  --border:#c9a84c25;
+  --font-display:'Cinzel', serif;
+  --font-body:'Cormorant Garamond', serif;
+  --text-xs:0.875rem;
+  --text-sm:1rem;
+  --text-base:1.25rem;
+  --text-lg:1.35rem;
+  --text-xl:1.65rem;
+  --text-2xl:2.25rem;
+  --text-3xl:3rem;
+  --text-4xl:4rem;
+  --text-hero:clamp(3rem, 8vw, 7rem);
+  --tracking-tight:-0.03em;
+  --tracking-display:-0.02em;
+  --tracking-wide:0.15em;
+  --tracking-ultra:0.3em;
+  --gap-section:clamp(80px, 12vw, 140px);
+  --gap-element:24px;
+  --pad-x:clamp(20px, 5vw, 80px);
+}
+
+body{
+  font-family:var(--font-body);
+  font-weight:300;
+  font-size:var(--text-base);
+  line-height:1.7;
+  color:var(--white);
+  background:var(--black);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ── Ornamental divider SVG ── */
+.ornament{
+  display:flex;align-items:center;justify-content:center;gap:16px;
+  width:100%;padding:0 var(--pad-x);
+}
+.ornament::before,.ornament::after{
+  content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.ornament svg{width:32px;height:32px;flex-shrink:0;color:var(--gold)}
+
+.ornament-sm{gap:12px}
+.ornament-sm::before,.ornament-sm::after{max-width:120px}
+.ornament-sm svg{width:20px;height:20px}
+
+/* ── Navigation ── */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:0 var(--pad-x);height:64px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(0,0,0,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  transition:background 0.4s,border-color 0.4s;
+}
+.nav.scrolled{background:rgba(0,0,0,0.95);border-color:var(--gold-muted)}
+.nav-logo{
+  display:flex;align-items:center;gap:8px;
+}
+.nav-logo svg{width:32px;height:auto;fill:var(--gold)}
+.nav-logo span{
+  font-family:var(--font-display);font-size:var(--text-sm);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--gold);
+}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--white-dim);transition:color 0.3s;
+  position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;
+  background:var(--gold);transform:scaleX(0);transform-origin:right;
+  transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.nav-links a:hover{color:var(--white)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-cta{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  padding:10px 24px;border:1px solid var(--gold);color:var(--gold);
+  cursor:pointer;transition:all 0.3s;
+}
+.nav-cta:hover{background:var(--gold);color:var(--black);box-shadow:0 0 20px rgba(201,168,76,0.25)}
+
+/* Mobile menu */
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.nav-toggle span{width:22px;height:1.5px;background:var(--gold);transition:all 0.3s}
+.nav-toggle.open span:nth-child(1){transform:rotate(45deg) translate(4.5px,4.5px)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:rotate(-45deg) translate(4.5px,-4.5px)}
+
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .nav-toggle{display:flex}
+  .mobile-menu{
+    position:fixed;top:64px;left:0;right:0;bottom:0;
+    background:rgba(0,0,0,0.97);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;
+    opacity:0;pointer-events:none;transition:opacity 0.4s;z-index:99;
+  }
+  .mobile-menu.open{opacity:1;pointer-events:auto}
+  .mobile-menu a{
+    font-family:var(--font-display);font-size:var(--text-lg);
+    letter-spacing:var(--tracking-wide);text-transform:uppercase;
+    color:var(--white-dim);transition:color 0.3s;
+  }
+  .mobile-menu a:hover{color:var(--gold)}
+  .mobile-menu .mob-cta{
+    padding:14px 40px;border:1px solid var(--gold);color:var(--gold);
+    font-family:var(--font-display);font-size:var(--text-sm);
+    letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  }
+}
+
+/* ── Hero ── */
+.hero{
+  position:relative;min-height:100vh;min-height:100svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:80px var(--pad-x);overflow:hidden;
+}
+.hero-video{
+  position:absolute;inset:0;z-index:0;
+  overflow:hidden;
+}
+.hero-video video{
+  width:100%;height:100%;object-fit:cover;
+  opacity:0.3;filter:grayscale(40%) brightness(0.8);
+}
+.hero-video::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,transparent 30%,var(--black) 80%);
+}
+.hero > *:not(.hero-video){position:relative;z-index:1}
+.hero-border{
+  position:absolute;inset:20px;
+  border:1px solid var(--gold-muted);
+  pointer-events:none;
+}
+.hero-corner{
+  position:absolute;width:40px;height:40px;
+  color:var(--gold);opacity:0.6;
+}
+.hero-corner--tl{top:0;left:0}
+.hero-corner--tr{top:0;right:0;transform:scaleX(-1)}
+.hero-corner--bl{bottom:0;left:0;transform:scaleY(-1)}
+.hero-corner--br{bottom:0;right:0;transform:scale(-1)}
+
+.hero-logo{
+  width:clamp(140px, 22vw, 260px);
+  fill:var(--gold);
+  margin-bottom:16px;
+  opacity:0.7;
+  filter:drop-shadow(0 0 20px rgba(201,168,76,0.1));
+  transition:fill 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+  cursor:pointer;
+}
+.hero-logo:hover{
+  fill:var(--white);
+  opacity:1;
+  filter:drop-shadow(0 0 30px rgba(255,255,255,0.4)) drop-shadow(0 0 80px rgba(255,255,255,0.15));
+}
+.hero-title{
+  font-family:var(--font-display);
+  font-size:var(--text-sm);
+  letter-spacing:var(--tracking-ultra);
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:40px;
+}
+.hero-name{
+  font-family:var(--font-display);
+  font-size:var(--text-hero);
+  font-weight:400;
+  letter-spacing:var(--tracking-display);
+  line-height:0.95;
+  text-align:center;
+  margin-bottom:24px;
+}
+.hero-sub{
+  font-family:var(--font-body);
+  font-size:var(--text-lg);
+  font-weight:300;
+  font-style:italic;
+  color:var(--white-dim);
+  text-align:center;
+  max-width:500px;
+  margin-bottom:56px;
+}
+.hero-actions{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.btn-primary{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  padding:16px 48px;background:var(--gold);color:var(--black);
+  cursor:pointer;transition:all 0.3s;font-weight:600;
+  display:inline-flex;align-items:center;gap:10px;
+}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,0.3)}
+.btn-primary:active{transform:translateY(0);box-shadow:none}
+.btn-secondary{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  padding:16px 48px;border:1px solid var(--gold);color:var(--gold);
+  cursor:pointer;transition:all 0.3s;
+  display:inline-flex;align-items:center;gap:10px;
+}
+.btn-secondary:hover{background:var(--gold);color:var(--black);box-shadow:0 8px 30px rgba(201,168,76,0.2)}
+.btn-secondary:active{transform:translateY(0);box-shadow:none}
+
+.hero-scroll{
+  position:absolute;bottom:40px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  color:var(--gold);opacity:0.5;
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-ultra);text-transform:uppercase;
+}
+.hero-scroll-line{width:1px;height:40px;background:linear-gradient(var(--gold),transparent);animation:scroll-pulse 2s ease-in-out infinite}
+@keyframes scroll-pulse{
+  0%,100%{opacity:0.5;transform:scaleY(1)}
+  50%{opacity:1;transform:scaleY(1.2);transform-origin:top}
+}
+@media(max-width:768px){.hero-scroll{display:none}}
+
+/* ── Section shared ── */
+.section{padding:var(--gap-section) var(--pad-x)}
+.section-header{
+  text-align:center;margin-bottom:clamp(48px, 6vw, 80px);
+}
+.section-label{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-ultra);text-transform:uppercase;
+  color:var(--gold);display:block;margin-bottom:16px;
+}
+.section-title{
+  font-family:var(--font-display);font-size:var(--text-3xl);
+  font-weight:400;letter-spacing:var(--tracking-tight);
+  line-height:1.15;margin-bottom:20px;
+}
+.section-desc{
+  font-size:var(--text-lg);font-weight:300;font-style:italic;
+  color:var(--white-dim);max-width:600px;margin:0 auto;
+}
+
+/* ── Portfolio Grid ── */
+.portfolio{background:var(--black)}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:2px;
+}
+.gallery-item{
+  position:relative;aspect-ratio:1;overflow:hidden;
+  background:var(--surface-card);cursor:pointer;
+  border:1px solid transparent;transition:border-color 0.4s;
+}
+.gallery-item:hover{border-color:rgba(201,168,76,0.3)}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 0.6s cubic-bezier(0.16,1,0.3,1),filter 0.6s;
+  filter:grayscale(30%);
+}
+.gallery-item:hover img{transform:scale(1.05);filter:grayscale(0%)}
+.gallery-item::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(transparent 60%,rgba(0,0,0,0.6));
+  opacity:0;transition:opacity 0.4s;pointer-events:none;
+}
+.gallery-item:hover::after{opacity:1}
+.gallery-caption{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:20px;z-index:2;
+  transform:translateY(10px);opacity:0;
+  transition:all 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.gallery-item:hover .gallery-caption{transform:translateY(0);opacity:1}
+.gallery-caption span{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--gold);
+}
+
+/* Placeholder for empty gallery */
+.gallery-placeholder{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  color:var(--white-dim);gap:12px;
+  border:1px solid var(--border);
+}
+.gallery-placeholder svg{width:32px;height:32px;color:var(--gold);opacity:0.4}
+.gallery-placeholder span{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  opacity:0.5;
+}
+
+/* Wide items */
+.gallery-item.wide{grid-column:span 2;aspect-ratio:2/1}
+.gallery-item.tall{grid-row:span 2;aspect-ratio:auto}
+
+@media(max-width:768px){
+  .gallery-grid{grid-template-columns:repeat(2, 1fr)}
+  .gallery-item.wide{grid-column:span 2}
+  .gallery-item.tall{grid-row:span 1;aspect-ratio:1}
+}
+@media(max-width:480px){
+  .gallery-grid{grid-template-columns:1fr 1fr;gap:1px}
+}
+
+/* ── Lightbox ── */
+.lightbox{
+  position:fixed;inset:0;z-index:200;
+  background:rgba(0,0,0,0.95);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity 0.4s;
+}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{
+  max-width:90vw;max-height:85vh;object-fit:contain;
+}
+.lightbox-close{
+  position:absolute;top:24px;right:24px;
+  width:40px;height:40px;cursor:pointer;color:var(--white);
+  display:flex;align-items:center;justify-content:center;
+}
+.lightbox-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:48px;height:48px;cursor:pointer;color:var(--white);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0.6;transition:opacity 0.3s;
+}
+.lightbox-nav:hover{opacity:1}
+.lightbox-prev{left:20px}
+.lightbox-next{right:20px}
+
+/* ── About ── */
+.about{background:var(--surface-dark)}
+.about-content{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px, 6vw, 80px);
+  align-items:center;max-width:1100px;margin:0 auto;
+}
+.about-image{
+  position:relative;aspect-ratio:3/4;overflow:hidden;
+  border:1px solid var(--border);
+}
+.about-image img{width:100%;height:100%;object-fit:cover}
+.about-image-frame{
+  position:absolute;inset:12px;border:1px solid var(--gold-muted);pointer-events:none;
+}
+.about-text h3{
+  font-family:var(--font-display);font-size:var(--text-2xl);
+  font-weight:400;letter-spacing:var(--tracking-tight);
+  margin-bottom:24px;
+}
+.about-text p{color:var(--white-dim);margin-bottom:20px;line-height:1.8}
+.about-text p strong{color:var(--gold);font-weight:400}
+.about-stats{
+  display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;
+  margin-top:40px;padding-top:32px;
+  border-top:1px solid var(--border);
+}
+.stat-value{
+  font-family:var(--font-display);font-size:var(--text-2xl);
+  color:var(--gold);letter-spacing:var(--tracking-tight);
+  display:block;
+}
+.stat-label{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--white-dim);margin-top:4px;display:block;
+}
+
+@media(max-width:768px){
+  .about-content{grid-template-columns:1fr;gap:40px}
+  .about-image{max-width:400px;margin:0 auto}
+}
+
+/* ── Services ── */
+.services{background:var(--black)}
+.services-grid{
+  display:grid;grid-template-columns:repeat(3, 1fr);
+  gap:0;max-width:1100px;margin:0 auto;
+}
+.service-card{
+  padding:clamp(32px, 4vw, 56px);
+  border:1px solid var(--border);
+  transition:border-color 0.4s,background 0.4s,transform 0.4s,box-shadow 0.4s;
+  text-align:center;position:relative;
+}
+.service-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:var(--gold);transform:scaleX(0);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.service-card:hover{border-color:var(--gold-muted);background:var(--surface-card);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.4)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{
+  width:48px;height:48px;color:var(--gold);
+}
+.service-icon-wrap{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;height:72px;margin:0 auto 24px;
+}
+.coverup-icon{
+  width:90px;height:90px;
+  filter:brightness(0) invert(68%) sepia(60%) saturate(400%) hue-rotate(12deg) brightness(0.72);
+  object-fit:contain;
+}
+.service-card h4{
+  font-family:var(--font-display);font-size:var(--text-sm);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  margin-bottom:16px;
+}
+.service-card p{font-size:var(--text-base);font-weight:500;color:var(--white-dim);line-height:1.7}
+
+@media(max-width:768px){
+  .services-grid{grid-template-columns:1fr}
+}
+
+/* ── Booking ── */
+.booking{background:var(--surface-dark)}
+.booking-content{max-width:900px;margin:0 auto}
+.booking-steps{
+  display:grid;grid-template-columns:repeat(3, 1fr);gap:2px;
+  margin-bottom:clamp(40px, 6vw, 64px);
+}
+.booking-step{
+  padding:32px 24px;background:var(--surface-card);text-align:center;
+}
+.step-num{
+  font-family:var(--font-display);font-size:var(--text-2xl);
+  color:var(--gold);letter-spacing:var(--tracking-tight);
+  display:block;margin-bottom:12px;
+}
+.step-title{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  display:block;margin-bottom:8px;
+}
+.step-desc{font-size:var(--text-sm);color:var(--white-dim)}
+
+/* Cal.com embed */
+.cal-embed-wrap{
+  border:1px solid var(--border);background:var(--surface-card);
+  overflow:hidden;position:relative;
+}
+#calCrop{overflow:hidden;max-height:540px}
+@media(max-width:768px){#calCrop iframe{width:100%!important;margin-left:0!important}}
+.cal-embed-wrap iframe{width:100%;border:none}
+.cal-setup-notice{
+  padding:48px 32px;text-align:center;
+}
+.cal-setup-notice h4{
+  font-family:var(--font-display);font-size:var(--text-sm);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--gold);margin-bottom:16px;
+}
+.cal-setup-notice p{font-size:var(--text-sm);color:var(--white-dim);line-height:1.7;max-width:480px;margin:0 auto}
+.cal-setup-notice a{color:var(--gold);text-decoration:underline}
+
+/* Deposit info */
+.deposit-info{
+  display:grid;grid-template-columns:1fr 1fr;gap:2px;
+  margin-top:2px;
+}
+.deposit-card{
+  padding:32px;background:var(--surface-card);
+}
+.deposit-card h4{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--gold);margin-bottom:12px;
+}
+.deposit-card p{font-size:var(--text-sm);color:var(--white-dim);line-height:1.7}
+.deposit-card .price{
+  font-family:var(--font-display);font-size:var(--text-xl);
+  color:var(--white);margin-top:12px;display:block;
+}
+
+@media(max-width:768px){
+  .booking-steps{grid-template-columns:1fr}
+  .deposit-info{grid-template-columns:1fr}
+}
+
+/* ── Contact ── */
+.contact{background:var(--black)}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px, 6vw, 80px);
+  max-width:1000px;margin:0 auto;
+}
+.contact-info{display:flex;flex-direction:column;gap:40px}
+.contact-item{display:flex;align-items:flex-start;gap:16px}
+.contact-item svg{width:20px;height:20px;color:var(--gold);flex-shrink:0;margin-top:4px}
+.contact-item .label{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--gold);display:block;margin-bottom:4px;
+}
+.contact-item .value{font-size:var(--text-base);color:var(--white)}
+.contact-item a.value:hover{color:var(--gold)}
+
+.contact-form{display:flex;flex-direction:column;gap:20px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--gold);
+}
+.form-group input,.form-group textarea,.form-group select{
+  padding:14px 16px;background:var(--surface-card);
+  border:1px solid var(--border);color:var(--white);
+  font-family:var(--font-body);font-size:var(--text-base);
+  transition:border-color 0.3s;
+}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{
+  border-color:var(--gold);outline:none;
+}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-group select{cursor:pointer;-webkit-appearance:none;appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23c9a84c' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center;
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.form-submit{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  padding:16px 48px;background:var(--gold);color:var(--black);
+  cursor:pointer;transition:all 0.3s;font-weight:600;
+  align-self:flex-start;
+}
+.form-submit:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,0.3)}
+.form-submit:active{transform:translateY(0);box-shadow:none}
+.form-submit:disabled{opacity:0.5;cursor:not-allowed}
+.form-status{
+  font-size:var(--text-sm);padding:12px 16px;display:none;
+}
+.form-status.success{display:block;background:#1a3a1a;color:#4ade80;border:1px solid #22543d}
+.form-status.error{display:block;background:#3a1a1a;color:#f87171;border:1px solid #7f1d1d}
+
+@media(max-width:768px){
+  .contact-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}
+
+/* ── Instagram Feed CTA ── */
+.ig-section{
+  padding:var(--gap-section) var(--pad-x);
+  text-align:center;background:var(--surface-dark);
+}
+.ig-handle{
+  font-family:var(--font-display);font-size:var(--text-2xl);
+  letter-spacing:var(--tracking-tight);
+  display:inline-flex;align-items:center;gap:16px;
+  color:var(--white);transition:color 0.3s;
+}
+.ig-handle:hover{color:var(--gold);filter:drop-shadow(0 0 12px rgba(201,168,76,0.3))}
+.ig-handle svg{width:28px;height:28px}
+.ig-sub{
+  font-size:var(--text-sm);font-style:italic;
+  color:var(--white-dim);margin-top:12px;
+}
+
+/* ── Footer ── */
+.footer{
+  padding:40px var(--pad-x);
+  border-top:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:20px;
+}
+.footer-logo{display:flex;align-items:center;gap:10px}
+.footer-logo svg{width:20px;height:auto;fill:var(--gold)}
+.footer-logo span{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--white-dim);
+}
+.footer-copy{
+  font-size:var(--text-xs);color:#555;
+}
+.footer-links{display:flex;gap:24px}
+.footer-links a{
+  font-family:var(--font-display);font-size:var(--text-xs);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--white-dim);transition:color 0.3s;
+}
+.footer-links a:hover{color:var(--gold)}
+
+/* ── Privacy Modal ── */
+.privacy-modal{
+  position:fixed;inset:0;z-index:300;
+  background:rgba(0,0,0,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity 0.4s;
+}
+.privacy-modal.open{opacity:1;pointer-events:auto}
+.privacy-modal-content{
+  background:var(--surface-card);border:1px solid var(--border);
+  max-width:720px;width:90%;max-height:80vh;overflow-y:auto;
+  padding:clamp(32px,5vw,56px);position:relative;
+}
+.privacy-modal-content h2{
+  font-family:var(--font-display);font-size:var(--text-2xl);
+  font-weight:400;letter-spacing:var(--tracking-tight);
+  margin-bottom:8px;
+}
+.privacy-modal-content .privacy-date{
+  font-size:var(--text-xs);color:var(--gold);
+  font-family:var(--font-display);letter-spacing:var(--tracking-wide);
+  text-transform:uppercase;margin-bottom:32px;display:block;
+}
+.privacy-modal-content h3{
+  font-family:var(--font-display);font-size:var(--text-sm);
+  letter-spacing:var(--tracking-wide);text-transform:uppercase;
+  color:var(--gold);margin:32px 0 12px;
+}
+.privacy-modal-content p{
+  font-size:var(--text-sm);color:var(--white-dim);line-height:1.8;margin-bottom:12px;
+}
+.privacy-modal-content ul{
+  padding-left:20px;margin-bottom:12px;
+}
+.privacy-modal-content li{
+  font-size:var(--text-sm);color:var(--white-dim);line-height:1.8;
+  list-style:disc;margin-bottom:4px;
+}
+.privacy-modal-close{
+  position:absolute;top:20px;right:20px;
+  width:40px;height:40px;cursor:pointer;color:var(--white);
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ── Entrance animation ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1),filter 0.8s cubic-bezier(0.16,1,0.3,1);filter:blur(4px)}
+.reveal.visible{opacity:1;transform:translateY(0);filter:blur(0)}
+.hero .reveal{transform:translateY(16px)}
+
+/* Hero stagger */
+.hero-logo-wrap{opacity:0;transform:scale(0.95);transition:opacity 1s 0.2s cubic-bezier(0.16,1,0.3,1),transform 1s 0.2s cubic-bezier(0.16,1,0.3,1)}
+.hero-title-wrap{opacity:0;transform:translateY(12px);transition:opacity 0.8s 0.5s cubic-bezier(0.16,1,0.3,1),transform 0.8s 0.5s cubic-bezier(0.16,1,0.3,1)}
+.hero-name-wrap{opacity:0;transform:translateY(16px);transition:opacity 0.8s 0.7s cubic-bezier(0.16,1,0.3,1),transform 0.8s 0.7s cubic-bezier(0.16,1,0.3,1)}
+.hero-sub-wrap{opacity:0;transition:opacity 0.8s 0.9s}
+.hero-actions-wrap{opacity:0;transform:translateY(10px);transition:opacity 0.8s 1.1s cubic-bezier(0.16,1,0.3,1),transform 0.8s 1.1s cubic-bezier(0.16,1,0.3,1)}
+.hero-border-wrap{opacity:0;transition:opacity 1.2s 0.3s}
+body.loaded .hero-logo-wrap,
+body.loaded .hero-title-wrap,
+body.loaded .hero-name-wrap,
+body.loaded .hero-sub-wrap,
+body.loaded .hero-actions-wrap,
+body.loaded .hero-border-wrap{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<!--
+  THESIS: A tattoo artist's portfolio that presents the work as gallery art on black velvet, not a social media feed; the page refuses the chaotic Instagram-screenshot grid the category defaults to.
+  OWN-WORLD: Black ground, warm gold (#c9a84c) hairlines and ornamental accents, Cinzel display capitals, Cormorant Garamond italic body — the palette of a gilt-edged monograph on a collector's shelf.
+  STORY: The visitor sees the monogram, registers premium craft, scrolls a curated gallery of work, understands the process, books an appointment, and pays a deposit — all without a DM.
+  FIRST VIEWPORT: Centered JB gothic monogram at generous scale, "TATTOO ARTIST" in tracked gold small-caps above, "Jay B" as the name anchor, ornamental gold border inset from the edges with corner flourishes, two actions below.
+  FORM: Editorial gallery on black — hairline gold grid, full-bleed imagery, monographic typography discipline.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+
+<!-- ── Nav ── -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav-logo">
+    <svg viewBox="27 20 325 490" xmlns="http://www.w3.org/2000/svg"><path d="M230.8,429.62c-5.29-.71-9.79-6.41-10.21-11.58-1.42-17.81,15.67-28.23,26.79-39.15,7.87-24.8.88-51.09-24.35-61.6-2.27-.94-7.04-2.76-9.34-2.97-.42-.04-.7-.08-.86.41l.52,39.9c.56,4.44,1.06,9.22,3.91,12.85,10.48,13.3,23.29-9.3,13.96-18.99-.61-.63-1.7-1.11-2.23-1.81,5.9.87,7.32,7.66,7.55,12.69.58,12.33-9.54,21.9-17.74,29.77-4.92,4.72-11.09,8.84-14.26,15.06-.62,1.21-1.23,3.7-1.84,4.58-.23.33-.32.55-.8.46-2.38-11.23-11.77-21.27-22.16-25.74-1.55-.67-3.2-.98-4.66-1.77-.24-1.05,5.64-4.04,5.81-5.64l-.44-21.67c3.81-3.76,6.88-8.22,8.6-13.32-1.32-.13-1.73,1.38-2.5,2.1-2.29,2.15-5.06,4.55-8.04,5.65-1.3.48-3.99.75-4.82,1.33-.71.49-3.37,4.71-4.03,5.75-3.53,5.53-9.84,18.59-9.91,25.01,0,.72,1.27,5.63.11,5.69l-1.81-1.82c-16.32-16.39-33.49-33.79-52.54-47.17-7.99-5.61-25.39-9.76-34.14-4.58-5.74,3.4-6.12,14.02,2.17,12.23.63.77-.79,1.48-1.46,1.62-2.99.61-6.77-1.87-7.27-4.89-1.42-8.48,3.88-15.5,9.71-20.89,3.5-3.23,11.32-6.86,16.08-7.13.77-.04,2.3.77,2.08-.26-3.59-1.43-7.49-1.54-11.32-1.41-.96.03-2.2.5-3.12.47-2.12-.07-12.49-8.83-14.48-10.79-24.4-24.1-20.36-61.4,1.4-85.76,15.02-16.81,41.41-24.87,63.2-18.5,26.57,7.77,35.08,38.65,7.43,51.99-5.76,2.78-20.05,9.13-25.42,3.85-1.45-1.43-2.16-5.54.46-5.77-1.72,6.51,7.25,5.63,10.59,2.91,5.74-4.68,6.4-13.45,3.79-19.94-8.83-22.02-47.24-18.61-53.28,3.97-3.48,13.02,2.6,31.37,9.62,42.48,5.1,8.07,14.02,15.03,21.48,20.97,12.8,10.19,26.32,19.47,39.33,29.39,9.06,6.91,16.27,11.99,22.87,21.53.17.25-.05.52.62.36.06-.61.24-1.19.29-1.81.45-5.57-.03-11.93.26-17.62.14-2.72.31-4.37.28-7.24-.18-18.63,1-37.29,1.42-55.86.03-1.24.21-4.59-.07-5.54-.41-1.41-5.41-2.82-6.82-2.96-11.71-1.13-21.39,11.07-15.8,21.94,3.02,5.87,8.52,7.88,14.85,6.23-.23,1.37-2.47,1.86-3.62,2.11-7.99,1.71-18.65-4.33-20.6-12.39-3.51-14.47,6.22-26.13,19.75-29.8,4.01-1.09,7.71-1.25,11.82-1.58.59-.2.98-2.21,1.04-2.88.77-8.52-.08-19.17-.02-27.95.09-13.54,2.58-35.01-4.62-46.75-5.16-8.41-14.44-13.72-23.94-8.35-9.99,5.64-10.06,22.87.85,26.7,3.04,1.07,5.38.37,8.45.48-3.89,3.35-11,2.05-15.27-.09-14.76-7.39-12.09-25.99-.78-35.24,9.03-7.39,20.07-8.1,31.14-5.74.97.21,4.72,1.67,5.18,1l-.17-27.54c0-9.05,1.41-24.99-6.41-31.27-2.74-2.2-6.14-2.7-9.21-4.19,0-.67,4.88-1.66,5.75-1.78,5.03-.72,9.86-.18,14.26,2.43,1.8,1.07,3.06,2.46,4.7,3.68,2.66-4.46,5.33-8.89,8.53-12.98.48-.62,3.2-3.17,2.78-3.77-10.4-2.92-21.45-6.06-32.26-6.99-14.89-1.28-26.6,4.36-35.28,16.39-10.26,14.22-6.9,33.25,13.51,31.94,4.77-.31,8.5-2.23,12.7-4.2-10.03,11.2-31.48,7.12-35.84-7.6-6.03-20.34,18.12-38.7,31.51-50.21,2.52-2.17,11.25-8.39,11.53-11.39.07-.79-.8-1.95-.45-2.53.26-.44,3.9-1.73,4.64-1.93,10.45-2.81,27.07,1.73,37.61,4.41,11.88,3.02,24.72,7.7,36.7,9.67,4.78.78,8.98.9,13.74-.19.36.33-3.94,5.66-4.42,6.33-10.12,14.31-16.9,26.46-37.26,21.24-.71-.18-3.52-1.42-3.88-.88-.76,3.08-1.23,6.29-1.38,9.46-.36,7.61.27,15.33.3,22.9.09,20.81-.1,41.63-.01,62.44.52.09.81-.36,1.12-.69,6.91-7.14,12.58-14.21,20.53-20.53,8.93-7.1,21.52-14.89,33.37-12.29.58.78-3.17,1.52-3.7,1.74-9.13,3.7-8.65,13.93-6.82,22.05,4.84,21.59,24.11,48.21,45.58,55.53,1.99.68,4.98,1.05,6.63,1.74.31.13.58.3.72.62-.11.3-.28.6-.5.85-4.45,4.87-12.42,10.64-17.75,14.93-6.91,5.56-14.1,11.23-21.27,16.44-1.75,1.27-5.33,3.23-6.65,4.52-.27.27-.53.37-.42.83,40.78.98,76.43,33.17,79.6,74.16,2.63,33.99-16.75,59.69-41.2,80.57-20.91,17.86-52.39,36.63-57.82,65.64-1.05,5.58-.79,12.48-2.64,17.75-.13.38-.14,1.11-.7.97-.67-.34-.87-3.06-1.12-3.91-6.51-22.54-41.18-52.52-62.92-60.26-6.89-2.45-18.99-5.12-24.78.77-3.66,3.71-2.06,12.9,4.6,10.33-.65,3.01-4.9,1.72-6.67.11-4.06-3.7-2.47-10.6-.17-14.92,3.88-7.29,11.49-13.87,20.12-13.9,15.98-.06,40.38,19.02,52.96,28.54,3.04,2.3,6.48,4.4,9.45,6.75s5.82,5.67,9.26,7.53c.56-.12,3.52-3.25,4.17-3.92,1.83-1.88,3.7-4.34,5.61-6.12,8.04-7.54,16.44-13.6,24.28-21.81,4.79-5.01,18.35-19.46,20.18-25.35,2.25-7.26-6.35-17.7-13.35-11.95-2.65,2.18-1.67,6.87,2.09,6.43-.9,1.47-3.04.75-4.03-.3-2.07-2.2-1.22-5.93.54-8.09,5.48-6.69,17.25-3.54,23.76,0,.63-.01.94-1.06,1.2-1.58,9-18.12,9.05-43.59,1.29-62.1-13.53-32.27-50.26-46.8-83.61-41.59l-.03,14.08c-.52,1.47.16,2.77.26,4.18.06.86-.24,3.85.27,4.2,4.31.5,8.69.28,13,.68,24.36,2.29,50.47,17.58,53.49,43.85.71.85,1.91-3.7,1.99-4.01.9-3.57,1.54-8.31-.54-11.54-.68-1.05-1.52-1.36-2.1-2.03-.27-.31-.21-.46-.19-.85,11.87,1.19,12.67,16.42,8.79,25.13-8.2,18.38-35.91,32.75-50.69,45.95-6.33,5.66-16.05,17.31-9.84,26.04,2.38,3.34,4.38,2.85,7.61,4.14.45.18.68-.03.56.68-1.28-.12-2.81.17-4.05,0ZM265.3,238.58c-24.58-8.48-41.59-32.91-50-56.56-1.26-3.55-2.12-7.28-3.49-10.75-2.27,3.79-1.88,8.7-1.83,13,.31,26.03,1.45,52.15,1.98,78.18.08,3.78-.19,7.57.12,11.33.3.42.6.25.99.15,1.25-.32,5.93-3.18,7.44-4.02,13.48-7.47,32.8-19.36,43.8-29.94.24-.23,1.25-1.02.98-1.39Z"/></svg>
+    <span>Jay B Tattoos</span>
+  </a>
+  <div class="nav-links">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#booking" class="nav-cta">Book Now</a>
+  <div class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#portfolio">Portfolio</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#booking" class="mob-cta">Book Now</a>
+</div>
+
+<!-- ── Hero ── -->
+<section class="hero" id="hero">
+  <div class="hero-video">
+    <video autoplay muted loop playsinline preload="auto" aria-hidden="true" poster="assets/gallery-1.jpeg">
+      <source src="assets/hero-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-border hero-border-wrap">
+    <svg class="hero-corner hero-corner--tl" viewBox="0 0 40 40" fill="none"><path d="M0 40V0h40" stroke="currentColor" stroke-width="0.5"/><path d="M4 4c4-2 8-2 12 0s4 6 0 8-8 0-12-2" stroke="currentColor" stroke-width="0.5" fill="none"/></svg>
+    <svg class="hero-corner hero-corner--tr" viewBox="0 0 40 40" fill="none"><path d="M0 40V0h40" stroke="currentColor" stroke-width="0.5"/><path d="M4 4c4-2 8-2 12 0s4 6 0 8-8 0-12-2" stroke="currentColor" stroke-width="0.5" fill="none"/></svg>
+    <svg class="hero-corner hero-corner--bl" viewBox="0 0 40 40" fill="none"><path d="M0 40V0h40" stroke="currentColor" stroke-width="0.5"/><path d="M4 4c4-2 8-2 12 0s4 6 0 8-8 0-12-2" stroke="currentColor" stroke-width="0.5" fill="none"/></svg>
+    <svg class="hero-corner hero-corner--br" viewBox="0 0 40 40" fill="none"><path d="M0 40V0h40" stroke="currentColor" stroke-width="0.5"/><path d="M4 4c4-2 8-2 12 0s4 6 0 8-8 0-12-2" stroke="currentColor" stroke-width="0.5" fill="none"/></svg>
+  </div>
+
+  <a href="#portfolio" class="hero-logo-wrap">
+    <svg class="hero-logo" viewBox="27 20 325 490" xmlns="http://www.w3.org/2000/svg"><path d="M230.8,429.62c-5.29-.71-9.79-6.41-10.21-11.58-1.42-17.81,15.67-28.23,26.79-39.15,7.87-24.8.88-51.09-24.35-61.6-2.27-.94-7.04-2.76-9.34-2.97-.42-.04-.7-.08-.86.41l.52,39.9c.56,4.44,1.06,9.22,3.91,12.85,10.48,13.3,23.29-9.3,13.96-18.99-.61-.63-1.7-1.11-2.23-1.81,5.9.87,7.32,7.66,7.55,12.69.58,12.33-9.54,21.9-17.74,29.77-4.92,4.72-11.09,8.84-14.26,15.06-.62,1.21-1.23,3.7-1.84,4.58-.23.33-.32.55-.8.46-2.38-11.23-11.77-21.27-22.16-25.74-1.55-.67-3.2-.98-4.66-1.77-.24-1.05,5.64-4.04,5.81-5.64l-.44-21.67c3.81-3.76,6.88-8.22,8.6-13.32-1.32-.13-1.73,1.38-2.5,2.1-2.29,2.15-5.06,4.55-8.04,5.65-1.3.48-3.99.75-4.82,1.33-.71.49-3.37,4.71-4.03,5.75-3.53,5.53-9.84,18.59-9.91,25.01,0,.72,1.27,5.63.11,5.69l-1.81-1.82c-16.32-16.39-33.49-33.79-52.54-47.17-7.99-5.61-25.39-9.76-34.14-4.58-5.74,3.4-6.12,14.02,2.17,12.23.63.77-.79,1.48-1.46,1.62-2.99.61-6.77-1.87-7.27-4.89-1.42-8.48,3.88-15.5,9.71-20.89,3.5-3.23,11.32-6.86,16.08-7.13.77-.04,2.3.77,2.08-.26-3.59-1.43-7.49-1.54-11.32-1.41-.96.03-2.2.5-3.12.47-2.12-.07-12.49-8.83-14.48-10.79-24.4-24.1-20.36-61.4,1.4-85.76,15.02-16.81,41.41-24.87,63.2-18.5,26.57,7.77,35.08,38.65,7.43,51.99-5.76,2.78-20.05,9.13-25.42,3.85-1.45-1.43-2.16-5.54.46-5.77-1.72,6.51,7.25,5.63,10.59,2.91,5.74-4.68,6.4-13.45,3.79-19.94-8.83-22.02-47.24-18.61-53.28,3.97-3.48,13.02,2.6,31.37,9.62,42.48,5.1,8.07,14.02,15.03,21.48,20.97,12.8,10.19,26.32,19.47,39.33,29.39,9.06,6.91,16.27,11.99,22.87,21.53.17.25-.05.52.62.36.06-.61.24-1.19.29-1.81.45-5.57-.03-11.93.26-17.62.14-2.72.31-4.37.28-7.24-.18-18.63,1-37.29,1.42-55.86.03-1.24.21-4.59-.07-5.54-.41-1.41-5.41-2.82-6.82-2.96-11.71-1.13-21.39,11.07-15.8,21.94,3.02,5.87,8.52,7.88,14.85,6.23-.23,1.37-2.47,1.86-3.62,2.11-7.99,1.71-18.65-4.33-20.6-12.39-3.51-14.47,6.22-26.13,19.75-29.8,4.01-1.09,7.71-1.25,11.82-1.58.59-.2.98-2.21,1.04-2.88.77-8.52-.08-19.17-.02-27.95.09-13.54,2.58-35.01-4.62-46.75-5.16-8.41-14.44-13.72-23.94-8.35-9.99,5.64-10.06,22.87.85,26.7,3.04,1.07,5.38.37,8.45.48-3.89,3.35-11,2.05-15.27-.09-14.76-7.39-12.09-25.99-.78-35.24,9.03-7.39,20.07-8.1,31.14-5.74.97.21,4.72,1.67,5.18,1l-.17-27.54c0-9.05,1.41-24.99-6.41-31.27-2.74-2.2-6.14-2.7-9.21-4.19,0-.67,4.88-1.66,5.75-1.78,5.03-.72,9.86-.18,14.26,2.43,1.8,1.07,3.06,2.46,4.7,3.68,2.66-4.46,5.33-8.89,8.53-12.98.48-.62,3.2-3.17,2.78-3.77-10.4-2.92-21.45-6.06-32.26-6.99-14.89-1.28-26.6,4.36-35.28,16.39-10.26,14.22-6.9,33.25,13.51,31.94,4.77-.31,8.5-2.23,12.7-4.2-10.03,11.2-31.48,7.12-35.84-7.6-6.03-20.34,18.12-38.7,31.51-50.21,2.52-2.17,11.25-8.39,11.53-11.39.07-.79-.8-1.95-.45-2.53.26-.44,3.9-1.73,4.64-1.93,10.45-2.81,27.07,1.73,37.61,4.41,11.88,3.02,24.72,7.7,36.7,9.67,4.78.78,8.98.9,13.74-.19.36.33-3.94,5.66-4.42,6.33-10.12,14.31-16.9,26.46-37.26,21.24-.71-.18-3.52-1.42-3.88-.88-.76,3.08-1.23,6.29-1.38,9.46-.36,7.61.27,15.33.3,22.9.09,20.81-.1,41.63-.01,62.44.52.09.81-.36,1.12-.69,6.91-7.14,12.58-14.21,20.53-20.53,8.93-7.1,21.52-14.89,33.37-12.29.58.78-3.17,1.52-3.7,1.74-9.13,3.7-8.65,13.93-6.82,22.05,4.84,21.59,24.11,48.21,45.58,55.53,1.99.68,4.98,1.05,6.63,1.74.31.13.58.3.72.62-.11.3-.28.6-.5.85-4.45,4.87-12.42,10.64-17.75,14.93-6.91,5.56-14.1,11.23-21.27,16.44-1.75,1.27-5.33,3.23-6.65,4.52-.27.27-.53.37-.42.83,40.78.98,76.43,33.17,79.6,74.16,2.63,33.99-16.75,59.69-41.2,80.57-20.91,17.86-52.39,36.63-57.82,65.64-1.05,5.58-.79,12.48-2.64,17.75-.13.38-.14,1.11-.7.97-.67-.34-.87-3.06-1.12-3.91-6.51-22.54-41.18-52.52-62.92-60.26-6.89-2.45-18.99-5.12-24.78.77-3.66,3.71-2.06,12.9,4.6,10.33-.65,3.01-4.9,1.72-6.67.11-4.06-3.7-2.47-10.6-.17-14.92,3.88-7.29,11.49-13.87,20.12-13.9,15.98-.06,40.38,19.02,52.96,28.54,3.04,2.3,6.48,4.4,9.45,6.75s5.82,5.67,9.26,7.53c.56-.12,3.52-3.25,4.17-3.92,1.83-1.88,3.7-4.34,5.61-6.12,8.04-7.54,16.44-13.6,24.28-21.81,4.79-5.01,18.35-19.46,20.18-25.35,2.25-7.26-6.35-17.7-13.35-11.95-2.65,2.18-1.67,6.87,2.09,6.43-.9,1.47-3.04.75-4.03-.3-2.07-2.2-1.22-5.93.54-8.09,5.48-6.69,17.25-3.54,23.76,0,.63-.01.94-1.06,1.2-1.58,9-18.12,9.05-43.59,1.29-62.1-13.53-32.27-50.26-46.8-83.61-41.59l-.03,14.08c-.52,1.47.16,2.77.26,4.18.06.86-.24,3.85.27,4.2,4.31.5,8.69.28,13,.68,24.36,2.29,50.47,17.58,53.49,43.85.71.85,1.91-3.7,1.99-4.01.9-3.57,1.54-8.31-.54-11.54-.68-1.05-1.52-1.36-2.1-2.03-.27-.31-.21-.46-.19-.85,11.87,1.19,12.67,16.42,8.79,25.13-8.2,18.38-35.91,32.75-50.69,45.95-6.33,5.66-16.05,17.31-9.84,26.04,2.38,3.34,4.38,2.85,7.61,4.14.45.18.68-.03.56.68-1.28-.12-2.81.17-4.05,0ZM265.3,238.58c-24.58-8.48-41.59-32.91-50-56.56-1.26-3.55-2.12-7.28-3.49-10.75-2.27,3.79-1.88,8.7-1.83,13,.31,26.03,1.45,52.15,1.98,78.18.08,3.78-.19,7.57.12,11.33.3.42.6.25.99.15,1.25-.32,5.93-3.18,7.44-4.02,13.48-7.47,32.8-19.36,43.8-29.94.24-.23,1.25-1.02.98-1.39Z"/></svg>
+  </a>
+
+  <div class="hero-title-wrap">
+    <p class="hero-title">Tattoo Artist</p>
+  </div>
+
+  <div class="hero-name-wrap">
+    <div class="ornament ornament-sm" style="margin-bottom:32px">
+      <svg viewBox="27 20 325 490" fill="currentColor"><path d="M230.8,429.62c-5.29-.71-9.79-6.41-10.21-11.58-1.42-17.81,15.67-28.23,26.79-39.15,7.87-24.8.88-51.09-24.35-61.6-2.27-.94-7.04-2.76-9.34-2.97-.42-.04-.7-.08-.86.41l.52,39.9c.56,4.44,1.06,9.22,3.91,12.85,10.48,13.3,23.29-9.3,13.96-18.99-.61-.63-1.7-1.11-2.23-1.81,5.9.87,7.32,7.66,7.55,12.69.58,12.33-9.54,21.9-17.74,29.77-4.92,4.72-11.09,8.84-14.26,15.06-.62,1.21-1.23,3.7-1.84,4.58-.23.33-.32.55-.8.46-2.38-11.23-11.77-21.27-22.16-25.74-1.55-.67-3.2-.98-4.66-1.77-.24-1.05,5.64-4.04,5.81-5.64l-.44-21.67c3.81-3.76,6.88-8.22,8.6-13.32-1.32-.13-1.73,1.38-2.5,2.1-2.29,2.15-5.06,4.55-8.04,5.65-1.3.48-3.99.75-4.82,1.33-.71.49-3.37,4.71-4.03,5.75-3.53,5.53-9.84,18.59-9.91,25.01,0,.72,1.27,5.63.11,5.69l-1.81-1.82c-16.32-16.39-33.49-33.79-52.54-47.17-7.99-5.61-25.39-9.76-34.14-4.58-5.74,3.4-6.12,14.02,2.17,12.23.63.77-.79,1.48-1.46,1.62-2.99.61-6.77-1.87-7.27-4.89-1.42-8.48,3.88-15.5,9.71-20.89,3.5-3.23,11.32-6.86,16.08-7.13.77-.04,2.3.77,2.08-.26-3.59-1.43-7.49-1.54-11.32-1.41-.96.03-2.2.5-3.12.47-2.12-.07-12.49-8.83-14.48-10.79-24.4-24.1-20.36-61.4,1.4-85.76,15.02-16.81,41.41-24.87,63.2-18.5,26.57,7.77,35.08,38.65,7.43,51.99-5.76,2.78-20.05,9.13-25.42,3.85-1.45-1.43-2.16-5.54.46-5.77-1.72,6.51,7.25,5.63,10.59,2.91,5.74-4.68,6.4-13.45,3.79-19.94-8.83-22.02-47.24-18.61-53.28,3.97-3.48,13.02,2.6,31.37,9.62,42.48,5.1,8.07,14.02,15.03,21.48,20.97,12.8,10.19,26.32,19.47,39.33,29.39,9.06,6.91,16.27,11.99,22.87,21.53.17.25-.05.52.62.36.06-.61.24-1.19.29-1.81.45-5.57-.03-11.93.26-17.62.14-2.72.31-4.37.28-7.24-.18-18.63,1-37.29,1.42-55.86.03-1.24.21-4.59-.07-5.54-.41-1.41-5.41-2.82-6.82-2.96-11.71-1.13-21.39,11.07-15.8,21.94,3.02,5.87,8.52,7.88,14.85,6.23-.23,1.37-2.47,1.86-3.62,2.11-7.99,1.71-18.65-4.33-20.6-12.39-3.51-14.47,6.22-26.13,19.75-29.8,4.01-1.09,7.71-1.25,11.82-1.58.59-.2.98-2.21,1.04-2.88.77-8.52-.08-19.17-.02-27.95.09-13.54,2.58-35.01-4.62-46.75-5.16-8.41-14.44-13.72-23.94-8.35-9.99,5.64-10.06,22.87.85,26.7,3.04,1.07,5.38.37,8.45.48-3.89,3.35-11,2.05-15.27-.09-14.76-7.39-12.09-25.99-.78-35.24,9.03-7.39,20.07-8.1,31.14-5.74.97.21,4.72,1.67,5.18,1l-.17-27.54c0-9.05,1.41-24.99-6.41-31.27-2.74-2.2-6.14-2.7-9.21-4.19,0-.67,4.88-1.66,5.75-1.78,5.03-.72,9.86-.18,14.26,2.43,1.8,1.07,3.06,2.46,4.7,3.68,2.66-4.46,5.33-8.89,8.53-12.98.48-.62,3.2-3.17,2.78-3.77-10.4-2.92-21.45-6.06-32.26-6.99-14.89-1.28-26.6,4.36-35.28,16.39-10.26,14.22-6.9,33.25,13.51,31.94,4.77-.31,8.5-2.23,12.7-4.2-10.03,11.2-31.48,7.12-35.84-7.6-6.03-20.34,18.12-38.7,31.51-50.21,2.52-2.17,11.25-8.39,11.53-11.39.07-.79-.8-1.95-.45-2.53.26-.44,3.9-1.73,4.64-1.93,10.45-2.81,27.07,1.73,37.61,4.41,11.88,3.02,24.72,7.7,36.7,9.67,4.78.78,8.98.9,13.74-.19.36.33-3.94,5.66-4.42,6.33-10.12,14.31-16.9,26.46-37.26,21.24-.71-.18-3.52-1.42-3.88-.88-.76,3.08-1.23,6.29-1.38,9.46-.36,7.61.27,15.33.3,22.9.09,20.81-.1,41.63-.01,62.44.52.09.81-.36,1.12-.69,6.91-7.14,12.58-14.21,20.53-20.53,8.93-7.1,21.52-14.89,33.37-12.29.58.78-3.17,1.52-3.7,1.74-9.13,3.7-8.65,13.93-6.82,22.05,4.84,21.59,24.11,48.21,45.58,55.53,1.99.68,4.98,1.05,6.63,1.74.31.13.58.3.72.62-.11.3-.28.6-.5.85-4.45,4.87-12.42,10.64-17.75,14.93-6.91,5.56-14.1,11.23-21.27,16.44-1.75,1.27-5.33,3.23-6.65,4.52-.27.27-.53.37-.42.83,40.78.98,76.43,33.17,79.6,74.16,2.63,33.99-16.75,59.69-41.2,80.57-20.91,17.86-52.39,36.63-57.82,65.64-1.05,5.58-.79,12.48-2.64,17.75-.13.38-.14,1.11-.7.97-.67-.34-.87-3.06-1.12-3.91-6.51-22.54-41.18-52.52-62.92-60.26-6.89-2.45-18.99-5.12-24.78.77-3.66,3.71-2.06,12.9,4.6,10.33-.65,3.01-4.9,1.72-6.67.11-4.06-3.7-2.47-10.6-.17-14.92,3.88-7.29,11.49-13.87,20.12-13.9,15.98-.06,40.38,19.02,52.96,28.54,3.04,2.3,6.48,4.4,9.45,6.75s5.82,5.67,9.26,7.53c.56-.12,3.52-3.25,4.17-3.92,1.83-1.88,3.7-4.34,5.61-6.12,8.04-7.54,16.44-13.6,24.28-21.81,4.79-5.01,18.35-19.46,20.18-25.35,2.25-7.26-6.35-17.7-13.35-11.95-2.65,2.18-1.67,6.87,2.09,6.43-.9,1.47-3.04.75-4.03-.3-2.07-2.2-1.22-5.93.54-8.09,5.48-6.69,17.25-3.54,23.76,0,.63-.01.94-1.06,1.2-1.58,9-18.12,9.05-43.59,1.29-62.1-13.53-32.27-50.26-46.8-83.61-41.59l-.03,14.08c-.52,1.47.16,2.77.26,4.18.06.86-.24,3.85.27,4.2,4.31.5,8.69.28,13,.68,24.36,2.29,50.47,17.58,53.49,43.85.71.85,1.91-3.7,1.99-4.01.9-3.57,1.54-8.31-.54-11.54-.68-1.05-1.52-1.36-2.1-2.03-.27-.31-.21-.46-.19-.85,11.87,1.19,12.67,16.42,8.79,25.13-8.2,18.38-35.91,32.75-50.69,45.95-6.33,5.66-16.05,17.31-9.84,26.04,2.38,3.34,4.38,2.85,7.61,4.14.45.18.68-.03.56.68-1.28-.12-2.81.17-4.05,0ZM265.3,238.58c-24.58-8.48-41.59-32.91-50-56.56-1.26-3.55-2.12-7.28-3.49-10.75-2.27,3.79-1.88,8.7-1.83,13,.31,26.03,1.45,52.15,1.98,78.18.08,3.78-.19,7.57.12,11.33.3.42.6.25.99.15,1.25-.32,5.93-3.18,7.44-4.02,13.48-7.47,32.8-19.36,43.8-29.94.24-.23,1.25-1.02.98-1.39Z"/></svg>
+    </div>
+    <h1 class="hero-name">Jay B</h1>
+  </div>
+
+  <div class="hero-sub-wrap">
+    <p class="hero-sub">Custom tattoo artistry rooted in precision, passion, and the craft of permanent art.</p>
+  </div>
+
+  <div class="hero-actions-wrap">
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">Book Now</a>
+      <a href="#portfolio" class="btn-secondary">View Work</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── Portfolio ── -->
+<section class="section portfolio" id="portfolio">
+  <div class="section-header reveal">
+    <span class="section-label">Portfolio</span>
+    <h2 class="section-title">The Work</h2>
+    <p class="section-desc">Every piece tells a story. Custom designs crafted for each client.</p>
+  </div>
+  <div class="ornament reveal" style="margin-bottom:48px">
+    <svg viewBox="27 20 325 490" fill="currentColor"><path d="M230.8,429.62c-5.29-.71-9.79-6.41-10.21-11.58-1.42-17.81,15.67-28.23,26.79-39.15,7.87-24.8.88-51.09-24.35-61.6-2.27-.94-7.04-2.76-9.34-2.97-.42-.04-.7-.08-.86.41l.52,39.9c.56,4.44,1.06,9.22,3.91,12.85,10.48,13.3,23.29-9.3,13.96-18.99-.61-.63-1.7-1.11-2.23-1.81,5.9.87,7.32,7.66,7.55,12.69.58,12.33-9.54,21.9-17.74,29.77-4.92,4.72-11.09,8.84-14.26,15.06-.62,1.21-1.23,3.7-1.84,4.58-.23.33-.32.55-.8.46-2.38-11.23-11.77-21.27-22.16-25.74-1.55-.67-3.2-.98-4.66-1.77-.24-1.05,5.64-4.04,5.81-5.64l-.44-21.67c3.81-3.76,6.88-8.22,8.6-13.32-1.32-.13-1.73,1.38-2.5,2.1-2.29,2.15-5.06,4.55-8.04,5.65-1.3.48-3.99.75-4.82,1.33-.71.49-3.37,4.71-4.03,5.75-3.53,5.53-9.84,18.59-9.91,25.01,0,.72,1.27,5.63.11,5.69l-1.81-1.82c-16.32-16.39-33.49-33.79-52.54-47.17-7.99-5.61-25.39-9.76-34.14-4.58-5.74,3.4-6.12,14.02,2.17,12.23.63.77-.79,1.48-1.46,1.62-2.99.61-6.77-1.87-7.27-4.89-1.42-8.48,3.88-15.5,9.71-20.89,3.5-3.23,11.32-6.86,16.08-7.13.77-.04,2.3.77,2.08-.26-3.59-1.43-7.49-1.54-11.32-1.41-.96.03-2.2.5-3.12.47-2.12-.07-12.49-8.83-14.48-10.79-24.4-24.1-20.36-61.4,1.4-85.76,15.02-16.81,41.41-24.87,63.2-18.5,26.57,7.77,35.08,38.65,7.43,51.99-5.76,2.78-20.05,9.13-25.42,3.85-1.45-1.43-2.16-5.54.46-5.77-1.72,6.51,7.25,5.63,10.59,2.91,5.74-4.68,6.4-13.45,3.79-19.94-8.83-22.02-47.24-18.61-53.28,3.97-3.48,13.02,2.6,31.37,9.62,42.48,5.1,8.07,14.02,15.03,21.48,20.97,12.8,10.19,26.32,19.47,39.33,29.39,9.06,6.91,16.27,11.99,22.87,21.53.17.25-.05.52.62.36.06-.61.24-1.19.29-1.81.45-5.57-.03-11.93.26-17.62.14-2.72.31-4.37.28-7.24-.18-18.63,1-37.29,1.42-55.86.03-1.24.21-4.59-.07-5.54-.41-1.41-5.41-2.82-6.82-2.96-11.71-1.13-21.39,11.07-15.8,21.94,3.02,5.87,8.52,7.88,14.85,6.23-.23,1.37-2.47,1.86-3.62,2.11-7.99,1.71-18.65-4.33-20.6-12.39-3.51-14.47,6.22-26.13,19.75-29.8,4.01-1.09,7.71-1.25,11.82-1.58.59-.2.98-2.21,1.04-2.88.77-8.52-.08-19.17-.02-27.95.09-13.54,2.58-35.01-4.62-46.75-5.16-8.41-14.44-13.72-23.94-8.35-9.99,5.64-10.06,22.87.85,26.7,3.04,1.07,5.38.37,8.45.48-3.89,3.35-11,2.05-15.27-.09-14.76-7.39-12.09-25.99-.78-35.24,9.03-7.39,20.07-8.1,31.14-5.74.97.21,4.72,1.67,5.18,1l-.17-27.54c0-9.05,1.41-24.99-6.41-31.27-2.74-2.2-6.14-2.7-9.21-4.19,0-.67,4.88-1.66,5.75-1.78,5.03-.72,9.86-.18,14.26,2.43,1.8,1.07,3.06,2.46,4.7,3.68,2.66-4.46,5.33-8.89,8.53-12.98.48-.62,3.2-3.17,2.78-3.77-10.4-2.92-21.45-6.06-32.26-6.99-14.89-1.28-26.6,4.36-35.28,16.39-10.26,14.22-6.9,33.25,13.51,31.94,4.77-.31,8.5-2.23,12.7-4.2-10.03,11.2-31.48,7.12-35.84-7.6-6.03-20.34,18.12-38.7,31.51-50.21,2.52-2.17,11.25-8.39,11.53-11.39.07-.79-.8-1.95-.45-2.53.26-.44,3.9-1.73,4.64-1.93,10.45-2.81,27.07,1.73,37.61,4.41,11.88,3.02,24.72,7.7,36.7,9.67,4.78.78,8.98.9,13.74-.19.36.33-3.94,5.66-4.42,6.33-10.12,14.31-16.9,26.46-37.26,21.24-.71-.18-3.52-1.42-3.88-.88-.76,3.08-1.23,6.29-1.38,9.46-.36,7.61.27,15.33.3,22.9.09,20.81-.1,41.63-.01,62.44.52.09.81-.36,1.12-.69,6.91-7.14,12.58-14.21,20.53-20.53,8.93-7.1,21.52-14.89,33.37-12.29.58.78-3.17,1.52-3.7,1.74-9.13,3.7-8.65,13.93-6.82,22.05,4.84,21.59,24.11,48.21,45.58,55.53,1.99.68,4.98,1.05,6.63,1.74.31.13.58.3.72.62-.11.3-.28.6-.5.85-4.45,4.87-12.42,10.64-17.75,14.93-6.91,5.56-14.1,11.23-21.27,16.44-1.75,1.27-5.33,3.23-6.65,4.52-.27.27-.53.37-.42.83,40.78.98,76.43,33.17,79.6,74.16,2.63,33.99-16.75,59.69-41.2,80.57-20.91,17.86-52.39,36.63-57.82,65.64-1.05,5.58-.79,12.48-2.64,17.75-.13.38-.14,1.11-.7.97-.67-.34-.87-3.06-1.12-3.91-6.51-22.54-41.18-52.52-62.92-60.26-6.89-2.45-18.99-5.12-24.78.77-3.66,3.71-2.06,12.9,4.6,10.33-.65,3.01-4.9,1.72-6.67.11-4.06-3.7-2.47-10.6-.17-14.92,3.88-7.29,11.49-13.87,20.12-13.9,15.98-.06,40.38,19.02,52.96,28.54,3.04,2.3,6.48,4.4,9.45,6.75s5.82,5.67,9.26,7.53c.56-.12,3.52-3.25,4.17-3.92,1.83-1.88,3.7-4.34,5.61-6.12,8.04-7.54,16.44-13.6,24.28-21.81,4.79-5.01,18.35-19.46,20.18-25.35,2.25-7.26-6.35-17.7-13.35-11.95-2.65,2.18-1.67,6.87,2.09,6.43-.9,1.47-3.04.75-4.03-.3-2.07-2.2-1.22-5.93.54-8.09,5.48-6.69,17.25-3.54,23.76,0,.63-.01.94-1.06,1.2-1.58,9-18.12,9.05-43.59,1.29-62.1-13.53-32.27-50.26-46.8-83.61-41.59l-.03,14.08c-.52,1.47.16,2.77.26,4.18.06.86-.24,3.85.27,4.2,4.31.5,8.69.28,13,.68,24.36,2.29,50.47,17.58,53.49,43.85.71.85,1.91-3.7,1.99-4.01.9-3.57,1.54-8.31-.54-11.54-.68-1.05-1.52-1.36-2.1-2.03-.27-.31-.21-.46-.19-.85,11.87,1.19,12.67,16.42,8.79,25.13-8.2,18.38-35.91,32.75-50.69,45.95-6.33,5.66-16.05,17.31-9.84,26.04,2.38,3.34,4.38,2.85,7.61,4.14.45.18.68-.03.56.68-1.28-.12-2.81.17-4.05,0ZM265.3,238.58c-24.58-8.48-41.59-32.91-50-56.56-1.26-3.55-2.12-7.28-3.49-10.75-2.27,3.79-1.88,8.7-1.83,13,.31,26.03,1.45,52.15,1.98,78.18.08,3.78-.19,7.57.12,11.33.3.42.6.25.99.15,1.25-.32,5.93-3.18,7.44-4.02,13.48-7.47,32.8-19.36,43.8-29.94.24-.23,1.25-1.02.98-1.39Z"/></svg>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="gallery-item tall">
+      <img src="assets/gallery-1.jpeg" alt="Full sleeve tattoo — Jesus with crown of thorns, rose, and scripture" loading="lazy">
+      <div class="gallery-caption"><span>Full Sleeve</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-2.jpeg" alt="Virgin Mary back piece with radiant halo" loading="lazy">
+      <div class="gallery-caption"><span>Back Piece</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-5.jpeg" alt="Reaper with lily — black and grey realism" loading="lazy">
+      <div class="gallery-caption"><span>Black &amp; Grey</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-4.jpeg" alt="Quetzalcoatl head tattoo — Aztec serpent with feathers" loading="lazy">
+      <div class="gallery-caption"><span>Head Piece</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-3.jpeg" alt="Virgin Mary forearm with rosary and rose — gothic window detail" loading="lazy">
+      <div class="gallery-caption"><span>Forearm</span></div>
+    </div>
+    <div class="gallery-item wide">
+      <img src="assets/gallery-6.jpeg" alt="Religious full sleeve — cross, dove, Virgin Mary with rosary" loading="lazy">
+      <div class="gallery-caption"><span>Full Sleeve</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-7.jpeg" alt="African warrior portrait sleeve with elephant — realism" loading="lazy">
+      <div class="gallery-caption"><span>Portrait Sleeve</span></div>
+    </div>
+    <div class="gallery-item tall">
+      <img src="assets/gallery-8.jpeg" alt="Detailed tattoo with snake, eagle, and skull motifs" loading="lazy">
+      <div class="gallery-caption"><span>Detail Work</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-9.jpeg" alt="Black and grey skull tattoo" loading="lazy">
+      <div class="gallery-caption"><span>Black &amp; Grey</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-10.jpeg" alt="Custom tattoo design" loading="lazy">
+      <div class="gallery-caption"><span>Custom Design</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-11.jpeg" alt="Tattoo artwork by Jay B" loading="lazy">
+      <div class="gallery-caption"><span>Fresh Ink</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/gallery-12.jpeg" alt="Tattoo artwork by Jay B" loading="lazy">
+      <div class="gallery-caption"><span>Portfolio</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── About ── -->
+<section class="section about" id="about">
+  <div class="section-header reveal">
+    <span class="section-label">About</span>
+    <h2 class="section-title">The Artist</h2>
+  </div>
+  <div class="about-content">
+    <div class="about-image reveal">
+      <img src="assets/jordan-art.png" alt="Jay B — tattoo artist" loading="lazy">
+      <div class="about-image-frame"></div>
+    </div>
+    <div class="about-text reveal">
+      <h3>Jay B</h3>
+      <p>A dedicated tattoo artist based in the <strong>San Fernando Valley</strong>, specializing in custom designs that are as unique as the people who wear them. Every tattoo is a collaboration between artist and client, crafted with precision and care.</p>
+      <p>From fine line work to bold traditional pieces, each session is about bringing your vision to life in permanent ink. No flash, no shortcuts — just <strong>original art</strong> tailored to you.</p>
+      <div class="about-stats">
+        <div>
+          <span class="stat-value">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div>
+          <span class="stat-value">500+</span>
+          <span class="stat-label">Tattoos Done</span>
+        </div>
+        <div>
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Custom Work</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Services ── -->
+<section class="section services" id="services">
+  <div class="section-header reveal">
+    <span class="section-label">Services</span>
+    <h2 class="section-title">What I Do</h2>
+    <p class="section-desc">Specializing in custom tattoo work across multiple styles.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-icon-wrap">
+        <svg class="service-icon" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="4" r="3"/>
+          <rect x="22.5" y="6" width="3" height="5" rx="1"/>
+          <rect x="3" y="10.5" width="10" height="3" rx="1.5"/>
+          <rect x="3" y="8.5" width="3" height="7" rx="1.5"/>
+          <path d="M10 10h30a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2z"/>
+          <rect x="38" y="5" width="2.5" height="8" rx="1" transform="rotate(-15 39 9)"/>
+          <rect x="10" y="14" width="3.5" height="9"/>
+          <rect x="38" y="14" width="3.5" height="9"/>
+          <ellipse cx="19" cy="16.5" rx="5" ry="2.2"/>
+          <ellipse cx="19" cy="18.5" rx="5" ry="2.2"/>
+          <ellipse cx="19" cy="20.5" rx="5" ry="2.2"/>
+          <ellipse cx="19" cy="22.5" rx="5" ry="2.2"/>
+          <ellipse cx="19" cy="16.5" rx="3.5" ry="1.2" fill="rgba(0,0,0,0.25)"/>
+          <ellipse cx="19" cy="18.5" rx="3.5" ry="1.2" fill="rgba(0,0,0,0.25)"/>
+          <ellipse cx="19" cy="20.5" rx="3.5" ry="1.2" fill="rgba(0,0,0,0.25)"/>
+          <ellipse cx="19" cy="22.5" rx="3.5" ry="1.2" fill="rgba(0,0,0,0.25)"/>
+          <rect x="17.5" y="15" width="3" height="9" rx="1" fill="rgba(0,0,0,0.35)"/>
+          <ellipse cx="33" cy="16.5" rx="5" ry="2.2"/>
+          <ellipse cx="33" cy="18.5" rx="5" ry="2.2"/>
+          <ellipse cx="33" cy="20.5" rx="5" ry="2.2"/>
+          <ellipse cx="33" cy="22.5" rx="5" ry="2.2"/>
+          <ellipse cx="33" cy="16.5" rx="3.5" ry="1.2" fill="rgba(0,0,0,0.25)"/>
+          <ellipse cx="33" cy="18.5" rx="3.5" ry="1.2" fill="rgba(0,0,0,0.25)"/>
+          <ellipse cx="33" cy="20.5" rx="3.5" ry="1.2" fill="rgba(0,0,0,0.25)"/>
+          <ellipse cx="33" cy="22.5" rx="3.5" ry="1.2" fill="rgba(0,0,0,0.25)"/>
+          <rect x="31.5" y="15" width="3" height="9" rx="1" fill="rgba(0,0,0,0.35)"/>
+          <path d="M10 23h30a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2z"/>
+          <rect x="34" y="27" width="10" height="20" rx="4"/>
+          <rect x="35" y="33" width="8" height="1" rx="0.5" fill="rgba(0,0,0,0.3)"/>
+          <rect x="35" y="37" width="8" height="1" rx="0.5" fill="rgba(0,0,0,0.3)"/>
+          <rect x="35" y="41" width="8" height="1" rx="0.5" fill="rgba(0,0,0,0.3)"/>
+          <path d="M36 47h6l-1.2 6h-3.6z"/>
+          <rect x="38" y="53" width="2" height="7" rx="0.8"/>
+        </svg>
+      </div>
+      <h4>Custom Tattoos</h4>
+      <p>Original designs created specifically for you. Every piece is a one-of-a-kind collaboration from concept to completion.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon-wrap">
+        <img class="service-icon coverup-icon" src="assets/coverup-icon.png" alt="Cover-up tattoo icon" loading="lazy">
+      </div>
+      <h4>Cover-Ups</h4>
+      <p>Transform old or unwanted tattoos into fresh artwork. Strategic design that conceals and elevates.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon-wrap">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h4>Consultations</h4>
+      <p>Free consultations to discuss your ideas, placement, sizing, and pricing. Walk-ins welcome for small pieces.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Booking ── -->
+<section class="section booking" id="booking">
+  <div class="section-header reveal">
+    <span class="section-label">Book</span>
+    <h2 class="section-title">Schedule Your Session</h2>
+    <p class="section-desc">Pick your date, pay your deposit, and secure your spot.</p>
+  </div>
+
+  <div class="booking-content">
+    <div class="booking-steps reveal">
+      <div class="booking-step">
+        <span class="step-num">01</span>
+        <span class="step-title">Choose a Date</span>
+        <p class="step-desc">Pick an available date and time from the live calendar below.</p>
+      </div>
+      <div class="booking-step">
+        <span class="step-num">02</span>
+        <span class="step-title">Pay Deposit</span>
+        <p class="step-desc">Secure your appointment with a non-refundable $50 deposit.</p>
+      </div>
+      <div class="booking-step">
+        <span class="step-num">03</span>
+        <span class="step-title">Get Tattooed</span>
+        <p class="step-desc">Show up on your date and leave with custom art.</p>
+      </div>
+    </div>
+
+    <!-- Cal.com Booking Embed -->
+    <div class="cal-embed-wrap reveal" id="calEmbed">
+      <!--
+        SETUP: Replace YOUR_CAL_USERNAME with Jay B's Cal.com username.
+        1. Sign up at cal.com (free)
+        2. Set available days/hours
+        3. Replace YOUR_CAL_USERNAME below with your username
+      -->
+      <div class="cal-setup-notice" id="calSetupNotice">
+        <h4>Booking Calendar</h4>
+        <p>The live booking calendar will appear here once connected. To book now, call <a href="tel:+18186881684">(818) 688-1684</a> or use the contact form below.</p>
+      </div>
+      <div id="calCrop"><div id="calInline" style="display:none"></div></div>
+    </div>
+
+    <!-- Cal.com embed script -->
+    <script>
+    (function(){
+      var CAL_USERNAME = 'jay-b-tattoos/tattoo-consultation';
+      if(CAL_USERNAME === 'YOUR_CAL_USERNAME') return;
+
+      var notice = document.getElementById('calSetupNotice');
+      var inline = document.getElementById('calInline');
+      if(notice) notice.style.display = 'none';
+      if(inline){
+        inline.style.display = 'block';
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://cal.com/' + CAL_USERNAME + '?embed=true&theme=dark&layout=month_view&hideEventTypeDetails=true';
+        iframe.style.cssText = 'border:none;min-height:650px;width:calc(100% + 380px);margin-left:-380px;';
+        iframe.allow = 'payment';
+        iframe.loading = 'lazy';
+        inline.appendChild(iframe);
+      }
+    })();
+    </script>
+
+    <div class="deposit-info reveal">
+      <div class="deposit-card">
+        <h4>Deposit</h4>
+        <p>A non-refundable deposit is required to book your session. This goes toward the total cost of your tattoo.</p>
+        <span class="price">$50 minimum</span>
+      </div>
+      <div class="deposit-card">
+        <h4>Cancellation</h4>
+        <p>Please provide at least 48 hours notice if you need to reschedule. No-shows forfeit the deposit.</p>
+        <span class="price">48hr notice</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Instagram CTA ── -->
+<section class="ig-section reveal">
+  <div class="ornament" style="margin-bottom:40px">
+    <svg viewBox="27 20 325 490" fill="currentColor"><path d="M230.8,429.62c-5.29-.71-9.79-6.41-10.21-11.58-1.42-17.81,15.67-28.23,26.79-39.15,7.87-24.8.88-51.09-24.35-61.6-2.27-.94-7.04-2.76-9.34-2.97-.42-.04-.7-.08-.86.41l.52,39.9c.56,4.44,1.06,9.22,3.91,12.85,10.48,13.3,23.29-9.3,13.96-18.99-.61-.63-1.7-1.11-2.23-1.81,5.9.87,7.32,7.66,7.55,12.69.58,12.33-9.54,21.9-17.74,29.77-4.92,4.72-11.09,8.84-14.26,15.06-.62,1.21-1.23,3.7-1.84,4.58-.23.33-.32.55-.8.46-2.38-11.23-11.77-21.27-22.16-25.74-1.55-.67-3.2-.98-4.66-1.77-.24-1.05,5.64-4.04,5.81-5.64l-.44-21.67c3.81-3.76,6.88-8.22,8.6-13.32-1.32-.13-1.73,1.38-2.5,2.1-2.29,2.15-5.06,4.55-8.04,5.65-1.3.48-3.99.75-4.82,1.33-.71.49-3.37,4.71-4.03,5.75-3.53,5.53-9.84,18.59-9.91,25.01,0,.72,1.27,5.63.11,5.69l-1.81-1.82c-16.32-16.39-33.49-33.79-52.54-47.17-7.99-5.61-25.39-9.76-34.14-4.58-5.74,3.4-6.12,14.02,2.17,12.23.63.77-.79,1.48-1.46,1.62-2.99.61-6.77-1.87-7.27-4.89-1.42-8.48,3.88-15.5,9.71-20.89,3.5-3.23,11.32-6.86,16.08-7.13.77-.04,2.3.77,2.08-.26-3.59-1.43-7.49-1.54-11.32-1.41-.96.03-2.2.5-3.12.47-2.12-.07-12.49-8.83-14.48-10.79-24.4-24.1-20.36-61.4,1.4-85.76,15.02-16.81,41.41-24.87,63.2-18.5,26.57,7.77,35.08,38.65,7.43,51.99-5.76,2.78-20.05,9.13-25.42,3.85-1.45-1.43-2.16-5.54.46-5.77-1.72,6.51,7.25,5.63,10.59,2.91,5.74-4.68,6.4-13.45,3.79-19.94-8.83-22.02-47.24-18.61-53.28,3.97-3.48,13.02,2.6,31.37,9.62,42.48,5.1,8.07,14.02,15.03,21.48,20.97,12.8,10.19,26.32,19.47,39.33,29.39,9.06,6.91,16.27,11.99,22.87,21.53.17.25-.05.52.62.36.06-.61.24-1.19.29-1.81.45-5.57-.03-11.93.26-17.62.14-2.72.31-4.37.28-7.24-.18-18.63,1-37.29,1.42-55.86.03-1.24.21-4.59-.07-5.54-.41-1.41-5.41-2.82-6.82-2.96-11.71-1.13-21.39,11.07-15.8,21.94,3.02,5.87,8.52,7.88,14.85,6.23-.23,1.37-2.47,1.86-3.62,2.11-7.99,1.71-18.65-4.33-20.6-12.39-3.51-14.47,6.22-26.13,19.75-29.8,4.01-1.09,7.71-1.25,11.82-1.58.59-.2.98-2.21,1.04-2.88.77-8.52-.08-19.17-.02-27.95.09-13.54,2.58-35.01-4.62-46.75-5.16-8.41-14.44-13.72-23.94-8.35-9.99,5.64-10.06,22.87.85,26.7,3.04,1.07,5.38.37,8.45.48-3.89,3.35-11,2.05-15.27-.09-14.76-7.39-12.09-25.99-.78-35.24,9.03-7.39,20.07-8.1,31.14-5.74.97.21,4.72,1.67,5.18,1l-.17-27.54c0-9.05,1.41-24.99-6.41-31.27-2.74-2.2-6.14-2.7-9.21-4.19,0-.67,4.88-1.66,5.75-1.78,5.03-.72,9.86-.18,14.26,2.43,1.8,1.07,3.06,2.46,4.7,3.68,2.66-4.46,5.33-8.89,8.53-12.98.48-.62,3.2-3.17,2.78-3.77-10.4-2.92-21.45-6.06-32.26-6.99-14.89-1.28-26.6,4.36-35.28,16.39-10.26,14.22-6.9,33.25,13.51,31.94,4.77-.31,8.5-2.23,12.7-4.2-10.03,11.2-31.48,7.12-35.84-7.6-6.03-20.34,18.12-38.7,31.51-50.21,2.52-2.17,11.25-8.39,11.53-11.39.07-.79-.8-1.95-.45-2.53.26-.44,3.9-1.73,4.64-1.93,10.45-2.81,27.07,1.73,37.61,4.41,11.88,3.02,24.72,7.7,36.7,9.67,4.78.78,8.98.9,13.74-.19.36.33-3.94,5.66-4.42,6.33-10.12,14.31-16.9,26.46-37.26,21.24-.71-.18-3.52-1.42-3.88-.88-.76,3.08-1.23,6.29-1.38,9.46-.36,7.61.27,15.33.3,22.9.09,20.81-.1,41.63-.01,62.44.52.09.81-.36,1.12-.69,6.91-7.14,12.58-14.21,20.53-20.53,8.93-7.1,21.52-14.89,33.37-12.29.58.78-3.17,1.52-3.7,1.74-9.13,3.7-8.65,13.93-6.82,22.05,4.84,21.59,24.11,48.21,45.58,55.53,1.99.68,4.98,1.05,6.63,1.74.31.13.58.3.72.62-.11.3-.28.6-.5.85-4.45,4.87-12.42,10.64-17.75,14.93-6.91,5.56-14.1,11.23-21.27,16.44-1.75,1.27-5.33,3.23-6.65,4.52-.27.27-.53.37-.42.83,40.78.98,76.43,33.17,79.6,74.16,2.63,33.99-16.75,59.69-41.2,80.57-20.91,17.86-52.39,36.63-57.82,65.64-1.05,5.58-.79,12.48-2.64,17.75-.13.38-.14,1.11-.7.97-.67-.34-.87-3.06-1.12-3.91-6.51-22.54-41.18-52.52-62.92-60.26-6.89-2.45-18.99-5.12-24.78.77-3.66,3.71-2.06,12.9,4.6,10.33-.65,3.01-4.9,1.72-6.67.11-4.06-3.7-2.47-10.6-.17-14.92,3.88-7.29,11.49-13.87,20.12-13.9,15.98-.06,40.38,19.02,52.96,28.54,3.04,2.3,6.48,4.4,9.45,6.75s5.82,5.67,9.26,7.53c.56-.12,3.52-3.25,4.17-3.92,1.83-1.88,3.7-4.34,5.61-6.12,8.04-7.54,16.44-13.6,24.28-21.81,4.79-5.01,18.35-19.46,20.18-25.35,2.25-7.26-6.35-17.7-13.35-11.95-2.65,2.18-1.67,6.87,2.09,6.43-.9,1.47-3.04.75-4.03-.3-2.07-2.2-1.22-5.93.54-8.09,5.48-6.69,17.25-3.54,23.76,0,.63-.01.94-1.06,1.2-1.58,9-18.12,9.05-43.59,1.29-62.1-13.53-32.27-50.26-46.8-83.61-41.59l-.03,14.08c-.52,1.47.16,2.77.26,4.18.06.86-.24,3.85.27,4.2,4.31.5,8.69.28,13,.68,24.36,2.29,50.47,17.58,53.49,43.85.71.85,1.91-3.7,1.99-4.01.9-3.57,1.54-8.31-.54-11.54-.68-1.05-1.52-1.36-2.1-2.03-.27-.31-.21-.46-.19-.85,11.87,1.19,12.67,16.42,8.79,25.13-8.2,18.38-35.91,32.75-50.69,45.95-6.33,5.66-16.05,17.31-9.84,26.04,2.38,3.34,4.38,2.85,7.61,4.14.45.18.68-.03.56.68-1.28-.12-2.81.17-4.05,0ZM265.3,238.58c-24.58-8.48-41.59-32.91-50-56.56-1.26-3.55-2.12-7.28-3.49-10.75-2.27,3.79-1.88,8.7-1.83,13,.31,26.03,1.45,52.15,1.98,78.18.08,3.78-.19,7.57.12,11.33.3.42.6.25.99.15,1.25-.32,5.93-3.18,7.44-4.02,13.48-7.47,32.8-19.36,43.8-29.94.24-.23,1.25-1.02.98-1.39Z"/></svg>
+  </div>
+  <a href="https://instagram.com/jay.b_tattoo" target="_blank" rel="noopener" class="ig-handle">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+    @jay.b_tattoo
+  </a>
+  <p class="ig-sub">Follow for the latest work and flash drops</p>
+</section>
+
+<!-- ── Contact ── -->
+<section class="section contact" id="contact">
+  <div class="section-header reveal">
+    <span class="section-label">Contact</span>
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-desc">Questions about pricing, availability, or your next piece? Reach out.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div>
+          <span class="label">Phone</span>
+          <a href="tel:+18186881684" class="value">(818) 688-1684</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        <div>
+          <span class="label">Instagram</span>
+          <a href="https://instagram.com/jay.b_tattoo" target="_blank" rel="noopener" class="value">@jay.b_tattoo</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>
+          <span class="label">Location</span>
+          <span class="value">San Fernando Valley, CA</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <input type="hidden" name="access_key" value="8756274b-8542-46ce-9d04-1e5bea4899bf">
+      <input type="hidden" name="subject" value="New inquiry from JB Tattoos website">
+      <input type="hidden" name="from_name" value="JB Tattoos Website">
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="formName">Name</label>
+          <input type="text" id="formName" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="formPhone">Phone</label>
+          <input type="tel" id="formPhone" name="phone" placeholder="(555) 555-5555">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="formEmail">Email</label>
+        <input type="email" id="formEmail" name="email" required placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label for="formService">Service</label>
+        <select id="formService" name="service">
+          <option value="">Select a service</option>
+          <option value="Custom Tattoo">Custom Tattoo</option>
+          <option value="Cover-Up">Cover-Up</option>
+          <option value="Consultation">Free Consultation</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="formMsg">Message</label>
+        <textarea id="formMsg" name="message" required placeholder="Tell me about the tattoo you have in mind — style, size, placement, and any reference images."></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="formSubmit">Send Message</button>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="footer-logo">
+    <svg viewBox="27 20 325 490" xmlns="http://www.w3.org/2000/svg"><path d="M230.8,429.62c-5.29-.71-9.79-6.41-10.21-11.58-1.42-17.81,15.67-28.23,26.79-39.15,7.87-24.8.88-51.09-24.35-61.6-2.27-.94-7.04-2.76-9.34-2.97-.42-.04-.7-.08-.86.41l.52,39.9c.56,4.44,1.06,9.22,3.91,12.85,10.48,13.3,23.29-9.3,13.96-18.99-.61-.63-1.7-1.11-2.23-1.81,5.9.87,7.32,7.66,7.55,12.69.58,12.33-9.54,21.9-17.74,29.77-4.92,4.72-11.09,8.84-14.26,15.06-.62,1.21-1.23,3.7-1.84,4.58-.23.33-.32.55-.8.46-2.38-11.23-11.77-21.27-22.16-25.74-1.55-.67-3.2-.98-4.66-1.77-.24-1.05,5.64-4.04,5.81-5.64l-.44-21.67c3.81-3.76,6.88-8.22,8.6-13.32-1.32-.13-1.73,1.38-2.5,2.1-2.29,2.15-5.06,4.55-8.04,5.65-1.3.48-3.99.75-4.82,1.33-.71.49-3.37,4.71-4.03,5.75-3.53,5.53-9.84,18.59-9.91,25.01,0,.72,1.27,5.63.11,5.69l-1.81-1.82c-16.32-16.39-33.49-33.79-52.54-47.17-7.99-5.61-25.39-9.76-34.14-4.58-5.74,3.4-6.12,14.02,2.17,12.23.63.77-.79,1.48-1.46,1.62-2.99.61-6.77-1.87-7.27-4.89-1.42-8.48,3.88-15.5,9.71-20.89,3.5-3.23,11.32-6.86,16.08-7.13.77-.04,2.3.77,2.08-.26-3.59-1.43-7.49-1.54-11.32-1.41-.96.03-2.2.5-3.12.47-2.12-.07-12.49-8.83-14.48-10.79-24.4-24.1-20.36-61.4,1.4-85.76,15.02-16.81,41.41-24.87,63.2-18.5,26.57,7.77,35.08,38.65,7.43,51.99-5.76,2.78-20.05,9.13-25.42,3.85-1.45-1.43-2.16-5.54.46-5.77-1.72,6.51,7.25,5.63,10.59,2.91,5.74-4.68,6.4-13.45,3.79-19.94-8.83-22.02-47.24-18.61-53.28,3.97-3.48,13.02,2.6,31.37,9.62,42.48,5.1,8.07,14.02,15.03,21.48,20.97,12.8,10.19,26.32,19.47,39.33,29.39,9.06,6.91,16.27,11.99,22.87,21.53.17.25-.05.52.62.36.06-.61.24-1.19.29-1.81.45-5.57-.03-11.93.26-17.62.14-2.72.31-4.37.28-7.24-.18-18.63,1-37.29,1.42-55.86.03-1.24.21-4.59-.07-5.54-.41-1.41-5.41-2.82-6.82-2.96-11.71-1.13-21.39,11.07-15.8,21.94,3.02,5.87,8.52,7.88,14.85,6.23-.23,1.37-2.47,1.86-3.62,2.11-7.99,1.71-18.65-4.33-20.6-12.39-3.51-14.47,6.22-26.13,19.75-29.8,4.01-1.09,7.71-1.25,11.82-1.58.59-.2.98-2.21,1.04-2.88.77-8.52-.08-19.17-.02-27.95.09-13.54,2.58-35.01-4.62-46.75-5.16-8.41-14.44-13.72-23.94-8.35-9.99,5.64-10.06,22.87.85,26.7,3.04,1.07,5.38.37,8.45.48-3.89,3.35-11,2.05-15.27-.09-14.76-7.39-12.09-25.99-.78-35.24,9.03-7.39,20.07-8.1,31.14-5.74.97.21,4.72,1.67,5.18,1l-.17-27.54c0-9.05,1.41-24.99-6.41-31.27-2.74-2.2-6.14-2.7-9.21-4.19,0-.67,4.88-1.66,5.75-1.78,5.03-.72,9.86-.18,14.26,2.43,1.8,1.07,3.06,2.46,4.7,3.68,2.66-4.46,5.33-8.89,8.53-12.98.48-.62,3.2-3.17,2.78-3.77-10.4-2.92-21.45-6.06-32.26-6.99-14.89-1.28-26.6,4.36-35.28,16.39-10.26,14.22-6.9,33.25,13.51,31.94,4.77-.31,8.5-2.23,12.7-4.2-10.03,11.2-31.48,7.12-35.84-7.6-6.03-20.34,18.12-38.7,31.51-50.21,2.52-2.17,11.25-8.39,11.53-11.39.07-.79-.8-1.95-.45-2.53.26-.44,3.9-1.73,4.64-1.93,10.45-2.81,27.07,1.73,37.61,4.41,11.88,3.02,24.72,7.7,36.7,9.67,4.78.78,8.98.9,13.74-.19.36.33-3.94,5.66-4.42,6.33-10.12,14.31-16.9,26.46-37.26,21.24-.71-.18-3.52-1.42-3.88-.88-.76,3.08-1.23,6.29-1.38,9.46-.36,7.61.27,15.33.3,22.9.09,20.81-.1,41.63-.01,62.44.52.09.81-.36,1.12-.69,6.91-7.14,12.58-14.21,20.53-20.53,8.93-7.1,21.52-14.89,33.37-12.29.58.78-3.17,1.52-3.7,1.74-9.13,3.7-8.65,13.93-6.82,22.05,4.84,21.59,24.11,48.21,45.58,55.53,1.99.68,4.98,1.05,6.63,1.74.31.13.58.3.72.62-.11.3-.28.6-.5.85-4.45,4.87-12.42,10.64-17.75,14.93-6.91,5.56-14.1,11.23-21.27,16.44-1.75,1.27-5.33,3.23-6.65,4.52-.27.27-.53.37-.42.83,40.78.98,76.43,33.17,79.6,74.16,2.63,33.99-16.75,59.69-41.2,80.57-20.91,17.86-52.39,36.63-57.82,65.64-1.05,5.58-.79,12.48-2.64,17.75-.13.38-.14,1.11-.7.97-.67-.34-.87-3.06-1.12-3.91-6.51-22.54-41.18-52.52-62.92-60.26-6.89-2.45-18.99-5.12-24.78.77-3.66,3.71-2.06,12.9,4.6,10.33-.65,3.01-4.9,1.72-6.67.11-4.06-3.7-2.47-10.6-.17-14.92,3.88-7.29,11.49-13.87,20.12-13.9,15.98-.06,40.38,19.02,52.96,28.54,3.04,2.3,6.48,4.4,9.45,6.75s5.82,5.67,9.26,7.53c.56-.12,3.52-3.25,4.17-3.92,1.83-1.88,3.7-4.34,5.61-6.12,8.04-7.54,16.44-13.6,24.28-21.81,4.79-5.01,18.35-19.46,20.18-25.35,2.25-7.26-6.35-17.7-13.35-11.95-2.65,2.18-1.67,6.87,2.09,6.43-.9,1.47-3.04.75-4.03-.3-2.07-2.2-1.22-5.93.54-8.09,5.48-6.69,17.25-3.54,23.76,0,.63-.01.94-1.06,1.2-1.58,9-18.12,9.05-43.59,1.29-62.1-13.53-32.27-50.26-46.8-83.61-41.59l-.03,14.08c-.52,1.47.16,2.77.26,4.18.06.86-.24,3.85.27,4.2,4.31.5,8.69.28,13,.68,24.36,2.29,50.47,17.58,53.49,43.85.71.85,1.91-3.7,1.99-4.01.9-3.57,1.54-8.31-.54-11.54-.68-1.05-1.52-1.36-2.1-2.03-.27-.31-.21-.46-.19-.85,11.87,1.19,12.67,16.42,8.79,25.13-8.2,18.38-35.91,32.75-50.69,45.95-6.33,5.66-16.05,17.31-9.84,26.04,2.38,3.34,4.38,2.85,7.61,4.14.45.18.68-.03.56.68-1.28-.12-2.81.17-4.05,0ZM265.3,238.58c-24.58-8.48-41.59-32.91-50-56.56-1.26-3.55-2.12-7.28-3.49-10.75-2.27,3.79-1.88,8.7-1.83,13,.31,26.03,1.45,52.15,1.98,78.18.08,3.78-.19,7.57.12,11.33.3.42.6.25.99.15,1.25-.32,5.93-3.18,7.44-4.02,13.48-7.47,32.8-19.36,43.8-29.94.24-.23,1.25-1.02.98-1.39Z"/></svg>
+    <span>JB Tattoos</span>
+  </div>
+  <div class="footer-links">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+    <a href="https://instagram.com/jay.b_tattoo" target="_blank" rel="noopener">Instagram</a>
+    <a href="#" onclick="document.getElementById('privacyModal').classList.add('open');document.body.style.overflow='hidden';return false">Privacy Policy</a>
+  </div>
+  <span class="footer-copy">&copy; 2026 JB Tattoos. All rights reserved.</span>
+</footer>
+
+<!-- ── Privacy Policy Modal ── -->
+<div class="privacy-modal" id="privacyModal" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
+  <div class="privacy-modal-content">
+    <button class="privacy-modal-close" aria-label="Close" onclick="document.getElementById('privacyModal').classList.remove('open');document.body.style.overflow=''">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <h2>Privacy Policy</h2>
+    <span class="privacy-date">Last updated: August 25, 2026</span>
+
+    <p>Jay B Tattoos ("we," "us," or "our") operates the JB Tattoos website. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services.</p>
+
+    <h3>Information We Collect</h3>
+    <p>We collect information you voluntarily provide when you:</p>
+    <ul>
+      <li>Submit a booking request (name, phone number, email, tattoo details)</li>
+      <li>Send a message through our contact form (name, phone, email, message)</li>
+      <li>Communicate with us via phone, email, or Instagram</li>
+    </ul>
+
+    <h3>How We Use Your Information</h3>
+    <p>Your personal information is used solely to:</p>
+    <ul>
+      <li>Respond to booking requests and schedule appointments</li>
+      <li>Communicate about your tattoo consultation, design, and session</li>
+      <li>Process deposit payments and manage appointment logistics</li>
+      <li>Reply to inquiries submitted through the contact form</li>
+    </ul>
+
+    <h3>Third-Party Services</h3>
+    <p>Our website uses the following third-party services:</p>
+    <ul>
+      <li><strong>Web3Forms</strong> — processes form submissions. Your form data is transmitted securely to Web3Forms for email delivery. See their privacy policy at web3forms.com.</li>
+      <li><strong>Google Fonts</strong> — serves typefaces used on this site. Google may collect anonymized usage data. See Google's privacy policy for details.</li>
+    </ul>
+    <p>We do not sell, rent, or share your personal information with any other third parties for marketing purposes.</p>
+
+    <h3>Data Retention</h3>
+    <p>We retain your booking and contact information only as long as necessary to fulfill your appointment and provide follow-up care instructions. You may request deletion of your data at any time by contacting us.</p>
+
+    <h3>Cookies &amp; Tracking</h3>
+    <p>This website does not use cookies, tracking pixels, or analytics tools. We do not track your browsing behavior.</p>
+
+    <h3>Your Rights</h3>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to the personal data we hold about you</li>
+      <li>Request correction or deletion of your data</li>
+      <li>Withdraw consent for us to contact you at any time</li>
+    </ul>
+
+    <h3>Portfolio Images</h3>
+    <p>Photos of completed tattoo work displayed on this site are used with client consent. If you are a client and would like your tattoo photo removed from the portfolio, please contact us.</p>
+
+    <h3>Contact</h3>
+    <p>For privacy-related questions or data requests, contact us at:</p>
+    <ul>
+      <li>Phone: (818) 688-1684</li>
+      <li>Instagram: @jay.b_tattoo</li>
+    </ul>
+
+    <h3>Changes to This Policy</h3>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+  </div>
+</div>
+
+<!-- ── Lightbox ── -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Previous">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img src="" alt="Tattoo work" id="lightboxImg">
+  <button class="lightbox-nav lightbox-next" aria-label="Next">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  // ── Load entrance ──
+  window.addEventListener('load', function(){ document.body.classList.add('loaded'); });
+
+  // ── Nav scroll ──
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function(){
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, {passive:true});
+
+  // ── Mobile menu ──
+  var toggle = document.getElementById('navToggle');
+  var menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', function(){
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+    var isOpen = menu.classList.contains('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      toggle.classList.remove('open');
+      menu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // ── Reveal on scroll ──
+  var reveals = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}
+    });
+  },{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  reveals.forEach(function(el){io.observe(el)});
+
+  // ── Lightbox ──
+  var lightbox = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  var items = [];
+  var alts = [];
+  var idx = 0;
+  document.querySelectorAll('.gallery-item:not(.gallery-placeholder)').forEach(function(item, i){
+    var img = item.querySelector('img');
+    if(!img) return;
+    items.push(img.src);
+    alts.push(img.alt || 'Tattoo work');
+    item.addEventListener('click', function(){
+      idx = i; lbImg.src = items[idx]; lbImg.alt = alts[idx];
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  function showLB(){ lbImg.src = items[idx]; lbImg.alt = alts[idx]; }
+  lightbox.querySelector('.lightbox-close').addEventListener('click', closeLB);
+  lightbox.addEventListener('click', function(e){ if(e.target === lightbox) closeLB(); });
+  lightbox.querySelector('.lightbox-prev').addEventListener('click', function(){ idx = (idx - 1 + items.length) % items.length; showLB(); });
+  lightbox.querySelector('.lightbox-next').addEventListener('click', function(){ idx = (idx + 1) % items.length; showLB(); });
+  document.addEventListener('keydown', function(e){
+    if(!lightbox.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLB();
+    if(e.key === 'ArrowLeft'){ idx = (idx - 1 + items.length) % items.length; showLB(); }
+    if(e.key === 'ArrowRight'){ idx = (idx + 1) % items.length; showLB(); }
+  });
+  function closeLB(){ lightbox.classList.remove('open'); document.body.style.overflow = ''; }
+
+  // Cal.com booking is handled by the inline embed script above.
+
+  // ── Contact form ──
+  var form = document.getElementById('contactForm');
+  var btn = document.getElementById('formSubmit');
+  var status = document.getElementById('formStatus');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    btn.disabled = true; btn.textContent = 'Sending...';
+    status.className = 'form-status'; status.textContent = '';
+    var data = new FormData(form);
+    fetch('https://api.web3forms.com/submit', {method:'POST', body:data})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.success){
+        status.className = 'form-status success';
+        status.textContent = 'Message sent. I\'ll get back to you soon.';
+        form.reset();
+      } else {
+        status.className = 'form-status error';
+        status.textContent = 'Something went wrong. Please try again or call (818) 688-1684.';
+      }
+    })
+    .catch(function(){
+      status.className = 'form-status error';
+      status.textContent = 'Network error. Please try again or call (818) 688-1684.';
+    })
+    .finally(function(){ btn.disabled = false; btn.textContent = 'Send Message'; });
+  });
+
+  // ── Smooth scroll for anchor links ──
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var target = document.querySelector(this.getAttribute('href'));
+      if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
