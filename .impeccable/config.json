@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-08-25T02:01:41.700Z",
         "reason": "Lightbox img element populated dynamically via JS on gallery click"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "/Users/user/Desktop/CLAUDE/jbtattoos/index.html"
+        ],
+        "createdAt": "2026-08-27T19:42:20.034Z",
+        "reason": "Intentional gold-on-black gothic brand aesthetic — gold glow accents are a deliberate design element throughout the site"
       }
     ]
   }
