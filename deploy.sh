@@ -10,6 +10,7 @@ set -euo pipefail
 
 HOST="jbtattoos-sg"
 REMOTE="www/jayb.tattoo/public_html/"
+INDEXNOW_KEY="83d3b317099449e687adf8ac26f44776"   # must match <key>.txt in the repo root
 cd "$(dirname "$0")"
 
 if [ -n "$(git status --porcelain)" ]; then
@@ -36,6 +37,11 @@ if [ "${1:-}" = "--live" ]; then
   rsync "${RSYNC_OPTS[@]}" --itemize-changes "$BUILD/" "$HOST:$REMOTE"
   # SiteGround's dynamic cache keeps serving old files until it is flushed.
   ssh "$HOST" 'site-tools-client domain update id=1 flush_cache=1' >/dev/null
+  # Tell Bing/Yandex/etc. (IndexNow) the sitemap's pages changed; the key file sits in the repo root.
+  URLS=$(grep -o '<loc>https://jayb.tattoo/[^<]*</loc>' sitemap.xml | sed 's#</*loc>##g; s/.*/"&"/' | paste -sd, -)
+  curl -s -o /dev/null -w "IndexNow: %{http_code}\n" -H 'Content-Type: application/json' \
+    -d "{\"host\":\"jayb.tattoo\",\"key\":\"$INDEXNOW_KEY\",\"urlList\":[$URLS]}" \
+    https://api.indexnow.org/indexnow || true
   echo "✅ Live. Commit: $(git rev-parse --short HEAD)"
 else
   rsync "${RSYNC_OPTS[@]}" --dry-run --itemize-changes "$BUILD/" "$HOST:$REMOTE"
