@@ -26,6 +26,7 @@ git archive HEAD | tar -x -C "$BUILD"
 RSYNC_OPTS=(-rlptz --delete
   --exclude='.git*' --exclude='.impeccable/' --exclude='.vercel/'
   --exclude='deploy.sh' --exclude='set-domain.sh' --exclude='*.md'
+  --exclude='assets/*.pdf'     # print files (business card, logo art) — not linked on the site
   --filter='P .well-known/'    # SiteGround's SSL verification files
   --filter='P php_errorlog')   # server-written error logs
 
