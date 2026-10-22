@@ -34,6 +34,8 @@ RSYNC_OPTS=(-rlptz --delete
 echo "Deploying $(git log -1 --format='%h %s') → $HOST:$REMOTE"
 if [ "${1:-}" = "--live" ]; then
   rsync "${RSYNC_OPTS[@]}" --itemize-changes "$BUILD/" "$HOST:$REMOTE"
+  # SiteGround's dynamic cache keeps serving old files until it is flushed.
+  ssh "$HOST" 'site-tools-client domain update id=1 flush_cache=1' >/dev/null
   echo "✅ Live. Commit: $(git rev-parse --short HEAD)"
 else
   rsync "${RSYNC_OPTS[@]}" --dry-run --itemize-changes "$BUILD/" "$HOST:$REMOTE"
